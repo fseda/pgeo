@@ -7,7 +7,7 @@ import (
 
 type NullPath struct {
 	Path
-	Valid bool
+	Valid bool `json:"valid"`
 }
 
 func (p NullPath) Value() (driver.Value, error) {

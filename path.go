@@ -14,8 +14,8 @@ var closedPathRegexp = regexp.MustCompile(`^\(\(`)
 // Paths can be open, where the first and last points in the list are considered not connected,
 // or closed, where the first and last points are considered connected.
 type Path struct {
-	Points []Point
-	Closed bool
+	Points []Point `json:"points"`
+	Closed bool    `json:"closed"`
 }
 
 func (p Path) Value() (driver.Value, error) {

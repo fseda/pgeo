@@ -7,7 +7,7 @@ import (
 
 type NullBox struct {
 	Box
-	Valid bool
+	Valid bool `json:"valid"`
 }
 
 func (b NullBox) Value() (driver.Value, error) {

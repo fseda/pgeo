@@ -7,7 +7,7 @@ import (
 
 type NullPolygon struct {
 	Polygon
-	Valid bool
+	Valid bool `json:"valid"`
 }
 
 func (p NullPolygon) Value() (driver.Value, error) {

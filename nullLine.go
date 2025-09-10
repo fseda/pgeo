@@ -7,7 +7,7 @@ import (
 
 type NullLine struct {
 	Line
-	Valid bool
+	Valid bool `json:"valid"`
 }
 
 func (l NullLine) Value() (driver.Value, error) {

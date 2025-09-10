@@ -7,7 +7,7 @@ import (
 
 type NullLseg struct {
 	Lseg
-	Valid bool
+	Valid bool `json:"valid"`
 }
 
 func (l NullLseg) Value() (driver.Value, error) {

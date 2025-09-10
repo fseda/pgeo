@@ -30,8 +30,8 @@ type Line struct {
 //Paths can be open, where the first and last points in the list are considered not connected,
 //or closed, where the first and last points are considered connected.
 type Path struct {
-	Points []Point
-	Closed bool `json:"closed"`
+	Points []Point `json:"points"`
+	Closed bool    `json:"closed"`
 }
 
 //Boxes are represented by pairs of points that are opposite corners of the box.

@@ -7,7 +7,7 @@ import (
 
 type NullPoint struct {
 	Point
-	Valid bool
+	Valid bool `json:"valid"`
 }
 
 func (p NullPoint) Value() (driver.Value, error) {

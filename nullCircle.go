@@ -7,7 +7,7 @@ import (
 
 type NullCircle struct {
 	Circle
-	Valid bool
+	Valid bool `json:"valid"`
 }
 
 func (c NullCircle) Value() (driver.Value, error) {
